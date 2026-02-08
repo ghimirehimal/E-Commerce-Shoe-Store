@@ -19,7 +19,7 @@ function Home() {
       toast.success(
             user
               ? `Welcome back, ${user.name}!`
-              : "Welcome to SOLE CRAFTS — discover your next step.",
+              : "Welcome to JUTTA LAGANI — discover your next step.",
             {
               className: "bg-background text-white font-semibold px-6 py-4 rounded-lg shadow-lg",
             

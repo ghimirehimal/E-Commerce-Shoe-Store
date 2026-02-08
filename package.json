@@ -1,43 +1,112 @@
 {
+  
   "name": "ecommercefrontend",
-  "version": "1.0.0",
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "main": "eslint.config.js",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mesurajan/Teaching_react.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mesurajan/Teaching_react/issues"
-  },
+  
   "homepage": "https://github.com/mesurajan/Teaching_react#readme",
-  "devDependencies": {
-    "@tailwindcss/vite": "^4.1.18",
-    "@vitejs/plugin-react": "^5.1.2",
-    "tailwindcss": "^4.1.18",
-    "vite": "^7.3.1"
+  
+  "version": "1.0.0",
+  
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  
+  "main": "eslint.config.js",
+  
+  "scripts": {
+  "predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+
+    
+  "dev": "vite",
+  
+    
+  "build": "vite build",
+  
+    
+  "lint": "eslint .",
+  
+    
+  "preview": "vite preview"
+  
   },
+  
+  "repository": {
+  
+    
+  "type": "git",
+  
+    
+  "url": "git+https://github.com/mesurajan/Teaching_react.git"
+  
+  },
+  
+  "keywords": [],
+  
+  "author": "",
+  
+  "license": "ISC",
+  
+  "bugs": {
+  
+    
+  "url": "https://github.com/mesurajan/Teaching_react/issues"
+  
+  },
+  
+  "devDependencies": {
+  
+    
+  "@tailwindcss/vite": "^4.1.18",
+  
+    
+  "@vitejs/plugin-react": "^5.1.2",
+  
+    
+  "gh-pages": "^6.3.0",
+  
+    
+  "tailwindcss": "^4.1.18",
+  
+    
+  "vite": "^7.3.1"
+  
+  },
+  
   "dependencies": {
-    "@reduxjs/toolkit": "^2.11.2",
-    "axios": "^1.13.4",
-    "lucide-react": "^0.563.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "react-hot-toast": "^2.6.0",
-    "react-icons": "^5.5.0",
-    "react-redux": "^9.2.0",
-    "react-router": "^7.13.0",
-    "react-router-dom": "^7.13.0",
-    "react-toastify": "^11.0.5",
-    "toastify": "^2.0.1"
+  
+    
+  "@reduxjs/toolkit": "^2.11.2",
+  
+    
+  "axios": "^1.13.4",
+  
+    
+  "lucide-react": "^0.563.0",
+  
+    
+  "react": "^19.2.4",
+  
+    
+  "react-dom": "^19.2.4",
+  
+    
+  "react-hot-toast": "^2.6.0",
+  
+    
+  "react-icons": "^5.5.0",
+  
+    
+  "react-redux": "^9.2.0",
+  
+    
+  "react-router": "^7.13.0",
+  
+    
+  "react-router-dom": "^7.13.0",
+  
+    
+  "react-toastify": "^11.0.5",
+  
+    
+  "toastify": "^2.0.1"
+  
   }
 }

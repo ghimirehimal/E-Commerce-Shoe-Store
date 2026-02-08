@@ -137,9 +137,9 @@ function Header() {
       {/* NAV BAR */}
       <div className="container mx-auto flex items-center justify-between px-3 sm:px-3 md:px-12 h-14">
 
-        <h1 className="text-2xl font-bold tracking-wide text-gradient">
+        <Link to="/" className="text-2xl font-bold tracking-wide text-gradient">
           Jutta Lagani
-        </h1>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-16 text-sm font-medium text-text">
           {["/", "/product", "/contact", "/orders"].map((path, i) => {

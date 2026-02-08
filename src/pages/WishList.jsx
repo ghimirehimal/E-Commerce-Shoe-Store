@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromwish, increaseQuantity, decreaseQuantity, clearwish } from '../apps/Reducers/wishList';
 import { addToCart } from '../apps/Reducers/CartSlice';
+import { Heart } from 'lucide-react';
 
 function WishList() {
   const dispatch = useDispatch();
@@ -12,9 +13,20 @@ function WishList() {
 
   if (!items || items.length === 0) {
     return (
-      <div className="p-8 text-center">
-        <h2 className="text-2xl mb-4">Your wishlist is empty 🛒</h2>
-        <Link to="/" className="viewdetails-btn">Continue Shopping</Link>
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4 mt-36">
+        <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-8 text-center">
+          <Heart className="mx-auto h-24 w-24 text-red-400 mb-6" />
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Your Wishlist is Empty</h2>
+          <p className="text-gray-600 mb-8">Looks like you haven't added anything to your wishlist yet. Start adding favorites!</p>
+          <div className="space-y-4">
+            <Link to="/product" className="block w-full bg-red-600 text-white py-3 px-6 rounded-lg hover:bg-red-700 transition duration-200">
+              Browse Products
+            </Link>
+            <Link to="/cart" className="block w-full bg-gray-200 text-gray-800 py-3 px-6 rounded-lg hover:bg-gray-300 transition duration-200">
+              View Cart
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }

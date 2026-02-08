@@ -21,6 +21,7 @@ import Users from './Admin/Users';
 import Banner from './Admin/Banner';
 import AdminProducts from './Admin/Products';
 import AdminOrders from './Admin/Orders';
+import AdminLoginPage from './pages/auth/AdminLoginPage';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -48,8 +49,9 @@ function App() {
 
     <Route path="/login" element={<LoginPage/>} />
     <Route path="/signup" element={<SignupPage/> }/>
+    <Route path="/admin/login" element={<AdminLoginPage />} />
 
-    <Route path="/admin" element={<AdminLayouts/>}>
+    <Route path="/admin" element={<AdminProtectedRoutes><AdminLayouts/></AdminProtectedRoutes>}>
       <Route index element={<Dashboard />} />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="users" element={<Users />} />
