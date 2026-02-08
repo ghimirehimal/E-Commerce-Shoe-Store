@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1e40af; /* Modern blue for primary actions */
+  --color-secondary: #f59e0b; /* Warm amber for accents */
+  --color-background: #f8fafc; /* Soft gray background */
+  --color-surface: #ffffff; /* White for cards and surfaces */
+  --color-text: #1f2937; /* Dark gray for text */
+  --color-muted: #6b7280; /* Muted gray for secondary text */
+  --color-accent: #dc2626; /* Red for highlights */
+  --color-success: #10b981; /* Green for success states */
+  --color-warning: #f59e0b; /* Amber for warnings */
+  --color-error: #ef4444; /* Red for errors */
+}
+
+@layer components {
+  .container {
+    @apply container mx-auto max-w-[1920px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 ease-in-out cursor-pointer hover:bg-blue-700 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 ease-in-out cursor-pointer hover:bg-amber-600 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-secondary/50;
+  }
+
+  .btn-outline {
+    @apply border border-primary text-primary font-medium py-2 px-4 rounded-lg transition-all duration-300 ease-in-out cursor-pointer hover:bg-primary hover:text-white hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+
+  .card {
+    @apply bg-surface rounded-xl shadow-sm border border-gray-200 transition-all duration-300 ease-in-out hover:shadow-md hover:scale-[1.02];
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  .hero-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+
+  .product-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6;
+  }
+
+  .nav-link {
+    @apply text-text font-medium transition-colors duration-300 ease-in-out hover:text-primary;
+  }
+
+  .nav-link.active {
+    @apply text-primary border-b-2 border-primary;
+  }
+}
+
+  
+

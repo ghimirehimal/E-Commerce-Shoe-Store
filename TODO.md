@@ -1,0 +1,5 @@
+- [x] Update vite.config.js to add proxy for /api to http://localhost:5000
+- [x] Update src/pages/auth/SignupPage.jsx to match reference code with additional fields, axios, and toast notifications
+- [x] Update src/pages/auth/LoginPage.jsx to use /api/auth/login instead of full URL
+- [x] Update src/pages/auth/AdminLoginPage.jsx to use /api/auth/admin/login instead of full URL
+- [x] Test the changes by running the frontend and backend
